@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+/* preventing to have extra border in the page, a MUST! */
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    /* always scretch the full screen even when the content is not full */
+    font-family: Abel, sans-serif;
+    background: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+
+/* How to put the spinner in the center of the page */
+
+
+/* The loader itself covered all the page, the loader img is on top left */
+
+.loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+
+/* Then the image is in the center compared to the loader div */
+
+.loader img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* 如果移除transform这一行，会发现image只是左上角在page正中，而非整个image */
+    transform: translate(-50%, -50%);
+}
