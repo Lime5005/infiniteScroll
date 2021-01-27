@@ -47,3 +47,30 @@ h1 {
     /* 如果移除transform这一行，会发现image只是左上角在page正中，而非整个image */
     transform: translate(-50%, -50%);
 }
+
+
+/* Image Container */
+
+
+/* margin: top, right, bottom, left */
+
+.image-container {
+    margin: 10px 30%;
+}
+
+
+/* width: if box-sizing is set to border-box, it sets the width of the border area. */
+
+.image-container img {
+    width: 100%;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+    .image-container {
+        margin: 15px;
+    }
+}
